@@ -1,0 +1,20 @@
+meta {
+  name: Update Character
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/characters/1/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Knight Paladin",
+    "hp": 120,
+    "attack": 25,
+    "defense": 8
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Create Character 1
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/api/characters/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Knight",
+    "hp": 100,
+    "attack": 20,
+    "defense": 5
+  }
+}

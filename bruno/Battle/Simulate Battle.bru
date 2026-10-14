@@ -1,0 +1,18 @@
+meta {
+  name: Simulate Battle
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/battle/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "character_1": 1,
+    "character_2": 2
+  }
+}
